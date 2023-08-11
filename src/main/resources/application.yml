@@ -1,0 +1,25 @@
+spring:
+  profiles: prd
+  debug: false
+  application:
+    name: pdf-microsservice
+   
+server:
+  port: 9191
+  debug: false
+  include-stacktrace: never
+  compression:
+    enabled: true
+    mime-types: application/json
+
+logging:
+  file: ../logs/pdf-microsservice.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    ROOT: INFO
+    org.springframework.web: INFO
+
+statusRate: 60000
+

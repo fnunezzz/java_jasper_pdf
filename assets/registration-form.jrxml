@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eb79455d-e019-4e1b-8c08-4c8d22c77fee">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<field name="client.firstName" class="java.lang.String">
+		<fieldDescription><![CDATA[client.firstName]]></fieldDescription>
+	</field>
+	<field name="client.middleName" class="java.lang.String">
+		<fieldDescription><![CDATA[client.middleName]]></fieldDescription>
+	</field>
+	<field name="client.lastName" class="java.lang.String">
+		<fieldDescription><![CDATA[client.lastName]]></fieldDescription>
+	</field>
+	<field name="contact.email" class="java.lang.String">
+		<fieldDescription><![CDATA[contact.email]]></fieldDescription>
+	</field>
+	<field name="contact.phoneNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[contact.phoneNumber]]></fieldDescription>
+	</field>
+	<field name="client.birthDate" class="java.lang.String">
+		<fieldDescription><![CDATA[client.birthDate]]></fieldDescription>
+	</field>
+	<field name="address.street" class="java.lang.String">
+		<fieldDescription><![CDATA[address.street]]></fieldDescription>
+	</field>
+	<field name="address.zipCode" class="java.lang.String">
+		<fieldDescription><![CDATA[address.zipCode]]></fieldDescription>
+	</field>
+	<field name="address.number" class="java.lang.Integer">
+		<fieldDescription><![CDATA[address.number]]></fieldDescription>
+	</field>
+	<field name="address.state" class="java.lang.String">
+		<fieldDescription><![CDATA[address.state]]></fieldDescription>
+	</field>
+	<field name="notes" class="java.lang.String">
+		<fieldDescription><![CDATA[notes]]></fieldDescription>
+	</field>
+	<field name="address.city" class="java.lang.String">
+		<fieldDescription><![CDATA[address.zipCode]]></fieldDescription>
+	</field>
+	<title>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="172" y="-10" width="210" height="34" uuid="97bbf25f-ee63-474a-b698-08fbd8925255">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FAKE COMPANY LTDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="11" width="280" height="16" uuid="86bf2258-cf40-4410-8c86-a4689399bf18">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER REGISTRATION FORM]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="27" width="560" height="17" uuid="109172f0-d6a5-4091-b9ac-c46062237a19"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["FIRST NAME: " + $F{client.firstName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="747" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="47" width="222" height="17" uuid="7df8505b-ae7e-4055-a7a7-1c9b1a2e060d"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["BIRTH DATE: " + $F{client.birthDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="101" width="140" height="17" uuid="b5203eb0-548f-431a-bdba-bda570e87815"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ZIP Code: " + $F{address.zipCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="13" width="560" height="17" uuid="c2afc1b8-ca4a-4347-902f-6c1f5b7ca189"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["LAST NAME: " + $F{client.lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="320" y="30" width="240" height="17" uuid="8ceae140-6a58-42df-84c7-79a5b8ed8785"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Phone Number: " + $F{contact.phoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="30" width="320" height="17" uuid="1824a438-7f8a-4a7a-b993-3dca29e374c7"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["E-mail: " + $F{contact.email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="-4" width="560" height="17" uuid="cb79730a-3efa-49fe-84de-2647398bd103"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["MIDDLE NAME: " + $F{client.middleName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="222" y="47" width="338" height="17" backcolor="#ADADAD" uuid="e7d65a6b-bd53-4f6d-bb7d-f0e1260dfd95"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="178" y="64" width="382" height="37" uuid="2b73f245-4407-4f16-a12f-a86a67d186c3"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ADDRESS: " +  $F{address.street}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="140" y="101" width="140" height="17" uuid="8da519be-a0d2-48a4-b5bc-1767ec7a80c9"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Address Number: " + $F{address.number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="420" y="101" width="140" height="17" backcolor="#ADADAD" uuid="501b8eb0-2321-4bc1-837c-201588da5ae8"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="280" y="101" width="140" height="17" uuid="92db640d-6a56-49cb-9381-c8fb3411877f"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["State: " + $F{address.state}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="0" y="118" width="560" height="135" uuid="0c7ad5f3-6411-4fab-b479-cbefce9f4861"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Top" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Notes: " +  $F{notes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="64" width="178" height="37" uuid="da140bc3-9ada-477c-a283-d72700f0300e"/>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CITY: " +  $F{address.city}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
